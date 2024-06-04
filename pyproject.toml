@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "lab_weather"
+version = "0.1.0"
+description = ""
+authors = ["Chris <chris@chrisproctor.net>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.31.0"
+geocoder = "^1.38.1"
+superturtle = "^0.1.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+weather = "weather.weather_cli:weather_cli"
